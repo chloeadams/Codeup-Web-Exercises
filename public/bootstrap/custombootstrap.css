@@ -1,0 +1,68 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+body{text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;}
+header {text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;}
+.list-inline {text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #8b8989;}
+.h3 {text-align: center;}
+.navbar-header: {opacity: 0.7;}
+header {background-color: #000000;}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* First image (Logo. Full height) */
+.bgimg1 {
+		min-height: 100%;}
+
+/* Second image (Portfolio) */
+.bgimg2 {
+    
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg3 {
+    
+    min-height: 400px;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+.a {
+  color: @link-color #8b8989;
+  text-decoration: none;
+	&:hover {
+    color: @link-hover-color #ff8c00;
+    text-decoration: underline;}}
+.fa {align-content: center;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook, .fa-twitter {
+    background: #ff8c00;
+    color: white;
+}

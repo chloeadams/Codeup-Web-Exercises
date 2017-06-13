@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px" rel="stylesheet">
+/* Small devices (tablets, 768px and up) */
+.header-img img{width: 100%;}
+@media screen and (min-width:768px) 
+{div.fullWidth {width: 100%;}
+#section {width: 768px; margin-left: auto; margin-right: auto;}
+#content { float: none; width: 100%;}
+#navigation {float:none; width: auto;}}
+	
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width:992px) { /* ... */ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) { /* ... */} 
+
+.nav-links {border: 1px solid black;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	font-weight: bold;
+	color: #db7093;
+	margin-top: 50px;
+	margin-right: 50px;
+	font-size: 15px;
+	float: center;
+	position: relative;  }
+
+body {float: center;
+	 font-style: color; #696969;
+	 font-family: 'Roboto Condensed', sans-serif;}
+h1, h2 {font-family: 'Roboto Condensed', sans-serif;
+		font-family: 'Slabo 27px', serif;
+		color: #ffb6c1;}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook, .fa-twitter {
+    background: #ffb6c1;
+    color: white;
+}

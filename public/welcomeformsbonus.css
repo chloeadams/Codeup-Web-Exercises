@@ -1,0 +1,17 @@
+
+body {background-image: url("");
+    background-repeat: repeat-x;}
+body {color: #006491; font-family: 'Open Sans Condensed', sans-serif;}
+main {border: background-color: #006491;
+          margin-left: auto;
+          margin-top: auto;}
+footer {background-color: #e31837;}
+h1   {color: #e31837; font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Archivo Black', sans-serif;}
+h2   {color: #e31837 ; font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Archivo Black', sans-serif;}
+body {width: auto;
+    border: 25px ; color:#e31837;
+    padding: auto;
+    margin: auto;
+}

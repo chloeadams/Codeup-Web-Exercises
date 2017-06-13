@@ -1,0 +1,29 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+h1 {text-align: center;
+	color: #f08080;}
+.container {margin: auto;
+			height: 1000px;
+			width: 80%;
+			max-width: 1200px;
+			background-color: papayawhip;
+			color: #f08080;
+			text-align: center;}
+.row {width: 100%;}
+.row:after {content:"";
+			display: table;
+			clear: both;}
+.column {border: 1px solid black;
+		float:left;
+		padding: 10%
+		margin; 0px;
+		height: 25px;}
+.column.one-half {width: 50%;}
+.column.one-third {width: 33.33%;}
+.column.one-fourth{width: 25%;}
+.column.one-eigth{width: 12.5%} 
+.column.two-third{width: 66.66%}
+.column.three-eigth{width: 37.5%}
+.column.two-fourth {width: 50%;}
+.column.three-sixth{width: 50%;}
+
