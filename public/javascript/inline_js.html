@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inline JS Example</title>
+	</head>
+		<body>
+			<p><h2>JavaScript Alert</h2></p>
+			<p><button onclick="myFunction()">Try it</button></p>
+			<p><button onclick="getValue()">Try it</button></p>
+			
+			
+			<script>
+				"use strict"; 
+				// JS code goes here
+				console.log('Hello from JavaScript!');
+				// Use the alert function to show a message that says 'Welcome to my Website!'.
+				function myFunction(){
+				alert("Welcome to my website!")}
+				//Use a prompt to ask for the user's favorite color. Use the user's response to alert a message that says that the color entered is your favorite color too.
+				function getValue (){
+				var userInput = prompt("What's your favorite color?" );
+				console.log('The user entered: ' + userInput);
+				document.write ('Awesome, ' + userInput + ' is my favorite color too!');}
+				
+			</script>
+		</body>
+</html>
