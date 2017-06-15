@@ -11,6 +11,7 @@ var color = colors[Math.floor(Math.random()*colors.length)];
 var favorite = 'yellow'; // TODO: change this to your favorite color from the list
 
 // TODO: Create a block of if/else statements to check for every color except indigo and violet.
+console.log("The random color chosen is " + color);
 if (color ==='red') 
 	{console.log("APPLES ARE RED.");} 
 	else if (color ==='orange') 
@@ -20,13 +21,13 @@ if (color ==='red')
 	else if (color ==='blue') {console.log("BLUEBERRIES ARE BLUE.");}
 	else {console.log("I DONT KNOW ANYTHING  BY THAT COLOR.");}
 
-	
+console.log("My favorite color i: " + favorite);	
 
 
-if (color === favorite) { message = "That's my favorite color too!"; }
-else { message = "That's a nice color, but it's not my favorite."; }
+var outcome = (color === favorite) ? 
+"That's my favorite color too!" : "That's a nice color, but it's not my favorite."
 
-
+console.log(outcome);
 	
 // TODO: When a color is encountered log a message that tells the color, and an object of that color.
 //       Example: Blue is the color of the sky.
