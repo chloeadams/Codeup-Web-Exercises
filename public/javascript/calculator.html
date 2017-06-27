@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="/javascript/calculator.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+	<body>
+			<!--Display Area -->
+			<form name="Calculator">
+				<main class="container">
+					<div class="row">
+						<div class="column one-third display"> <input type="text"  id="leftdisplay" name="left operand" readonly=""></div>
+						<div class="column one-third display"> <input type="text" id="operatordisplay" name="operator" readonly=""></div>
+						<div class="column one-third display"> <input type="text"  id="rightdisplay" name="right operand" readonly=""></div>
+					</div>
+					
+					<!--First Row -->
+					<div class="row">
+						<div class="column one-half"><input type="button" id="clear" class="m button" value= "C" > </div>
+						<div class="column one-fourth"><input type="button" id="percentage" class="m button" value= "%" > </div>
+						<div class="column one-fourth"><input type="button" id="division" class="m button" value= "/" > </div>	
+					</div>
+						<!-- Second Row -->
+					<div class="row">		
+						<div class="column one-fourth"><input type="button" id="seven" class="button" value= "7" > </div>
+						<div class="column one-fourth"><input type="button" id="eight" class="button" value= "8"  > </div>
+						<div class="column one-fourth"><input type="button" id="nine" class="button" value= "9" > </div>
+						<div class="column one-fourth"><input type="button" id="multiplication" class="m button" value= "X" > </div>
+					</div>
+						<!--Third Row -->
+					<div class="row">	
+						<div class="column one-fourth"><input type="button" id="four" class="button" value= "4" > </div>
+						<div class="column one-fourth"><input type="button" id="five" class="button" value= "5" > </div>
+						<div class="column one-fourth"><input type="button" id="six" class="button" value= "6" > </div>
+						<div class="column one-fourth"><input type="button" id="subraction" class="m button" value= "-" > </div>
+					</div>
+						<!-- Fourth Row -->
+					<div class="row">
+						<div class="column one-fourth"><input type="button" id="one" class="button" value= "1" > </div>
+						<div class="column one-fourth"><input type="button" id="two" class="button" value= "2" > </div>
+						<div class="column one-fourth"><input type="button" id="three" class="button" value= "3" > </div>
+						<div class="column one-fourth"><input type="button" id="addition" class="m button" value= "+" > </div>
+						
+					</div>
+						<!--Fifth Row -->
+					<div class="row">
+						<div class="column one-half"><input type="button" id="zero" class="button" value= "0" ></div>
+						<div class="column one-fourth"><input type="button" id="decimal" class="m button" value= "." ></div>
+						<div class="column one-fourth"><input type="button" id="equal" class="m button" value= "=" > </div>
+					</div>
+				</main>
+			</form>
+		
+		<script src="/javascript/calculator.js"></script>
+	</body>
+</html>
