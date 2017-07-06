@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function Warm Up</title>
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+	<script>
+		$(document).ready(function() {
+		"use strict";
+		// create a function called isOldDog() that takes in an array of objects and returns an array of booleans. A value of true will be added to the output array if the age property value of a given object is greater than 10, otherwise a value of false will be added to the output array.
+		var dogsJsonFile = [
+ 	{
+ 		"name": "Old Yeller",
+ 		"color": "gold",
+ 		"age": 12
+ 	},
+ 	{
+ 		"name": "Big Red",
+ 		"color": "brown",
+ 		"age": 10
+ 	},
+ 	{
+ 		"name": "Lassie",
+ 		"color": "brown, white, black",
+		"age": 5
+ 	},
+ 	{
+ 		"name": "Beethoven",
+ 		"color": "brown, white",
+ 		"age": 9
+ 	}
+ ];
+		function isOldDog (array) {
+			var outputArray = [];
+			array.forEach(function (element) {
+				element.age 
+			if (element.age >= 10) {
+				outputArray.push (false)
+			} else {
+				outputArray.push (true)
+			}
+			})
+			return outputArray;
+
+			
+		};
+		console.log(isOldDog(dogsJsonFile));
+
+		// create a function makeRequest() that makes a GET request to the dogs.json file.
+		function makeRequest () {
+			var request = $.get("/data/dogs.json");
+			request.done (function (data,status) {
+				console.log(data);
+				console.log(isOldDog(data))
+
+			})
+			request.fail (function (status, error) {
+				console.log(status,error);
+			})
+		}
+
+		// In the .done method, console.log the returned value of isOldDog(data).
+
+		// Call the makeRequest() function to test
+		makeRequest()
+
+
+		});	
+	</script>
+</body>
+</html>
