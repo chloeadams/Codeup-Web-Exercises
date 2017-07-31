@@ -3,70 +3,134 @@
 <head>
 	<title>Chloe N. Adams</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body>
+<container>
+<!-- Navigation Bar For Desktop-->
 <div class="row">
-	<div class="col-md-12">
-		<img class="background-image" src="header1.jpg">
-			<div class="img-text">
-    			<h1>Hi, I'm Chloe Adams</h1>
-    				<p>And I'm a Web Developer</p>
-    					<button type="button" class="btn">Contact Me</button>
-    		</div>
-  		</div>
+		<div class="column one-fifth desktopNavigation">Home</div>
+		<div class="column one-fifth desktopNavigation">About</div>
+		<div class="column one-fifth desktopNavigation">Resume</div>
+		<div class="column one-fifth desktopNavigation">Portfolio</div>
+		<div class="column one-fifth desktopNavigation">Contact</div>
 	</div>
-</div>
-	<div class="row">
-		<div class="nav-text">
-				<div class="col-md-4">
-						<div class="container">
-					<center><h1><p>About</p></h1></center>
-					<center><img src="about.png" style="image-responsive" class="image-responsive nav-img hidden-xs hidden-sm  " ></center><br>	
-					<center>When I’m not working on customer's websites, you can find me either curled up in bed with my phone on “do not disturb” or getting lit on some dance floor...</center><br>
-					<center><button type="button" class="btn-nav">Find Out More</button></center>		
-				</div>
-				<div class="col-md-4">
-					<center><h1><p>Resume</p></h1></center>
-					<center><img src="resume.png" style="image-responsive" class="image-responsive nav-img hidden-xs hidden-sm " ></center><br>
-					<center>I am a fairly recent graduate of The University of Texas at San Antonio where I received my BBA in Marketing with a concentration in Event Management...</center><br>
-					<center><button type="button" class="btn-nav">Find Out More</button></center>
-				</div>
-				<div class="col-md-4">
-					<center><h1><p>Portfolio</p></h1></center>
-					<center><img src="portfolio.png" style="image-responsive" class="image-responsive nav-img hidden-xs hidden-sm " ></center><br>
-					<center>I have been a website developer for 9 days and have 4 projects under my belt....</center><br>
-					<center><button type="button" class="btn-nav">Find Out More</button></center>
-					</div>
-			</div>
-		</div><br> <br>
+<!-- Navigation Bar for Tablet -->
+<div class="row">
+		<div class="column one-fifth tabletNavigation">Home</div>
+		<div class="column one-fifth tabletNavigation">About</div>
+		<div class="column one-fifth tabletNavigation">Resume</div>
+		<div class="column one-fifth tabletNavigation">Portfolio</div>
+		<div class="column one-fifth tabletNavigation">Contact</div>
 	</div>
+
+<!-- Navigation Bar for Mobile -->
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Chloe Adams</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a href="collapsible.html">Resume</a></li>
+        <li><a href="mobile.html">Portfolio</a></li>
+        <li><a href="mobile.html">Contact</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a href="collapsible.html">Resume</a></li>
+        <li><a href="mobile.html">Portfolio</a></li>
+        <li><a href="mobile.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+	<!-- Hero Image and Top Section --> 
 	<div class="row">
-		<div class="social-links">
-			<div class="col-md-12"> 
-				<center>
-				<h1>Let's Get Social</h1> <br> 
-        		<div id="social-media-links">
-            	<a href="www.facebook.com/justagirlinthisworldblog" class="fa fa-facebook"></a>
-            	<a href="www.twitter.com/jagwblog" class="fa fa-twitter"></a>
-            	<a href="www.instagram.com/justagirlinthisworldblog" class="fa fa-instagram"></a>
-            	<a href="www.pinterest.com/chloe__blogs" class="fa fa-pinterest"></a>
-            	<a href="#" class="fa fa-codepen"></a>
-            	<a href="www.justagirlinthisworld.com" class="fa fa-rss-square"></a> <br> <br> 
-            	</div>
-        	</div>
-        	</center> </div>
+		<div class="col-md-12">
+			<img class="background-image" src="header1.jpg">
+				<div class="img-text">
+	    			<h1 id="hiImChloeAdams">Hi, I'm Chloe Adams,</h1>
+	    				<p id="imAWPDev">and I'm a WordPress Developer, Social Media Manager, and Writer.</p>
+	    					<button type="button" class="btn">Contact Me</button>
+	    		</div>
+	  		</div>
 		</div>
 	</div>
+
+		
+		<!-- Navigation Section -->
+			<div class="row">
+				<div class="nav-text">
+						<div class="column one-third" id="aboutSection">
+							<h1 id="about"><p>About</p></h1>	
+								<div id="aboutTextBlock"> When I’m not working on customer's websites, you can find me either curled up in bed with my phone on “do not disturb” or getting lit on some dance floor...</div>
+									<button type="button" class="btn-nav">Find Out More About Me</button>		
+						</div>
+						<div class="column one-third resumeSection">
+							<h1 id="resume"><p>Resume</p></h1>
+								<div id="resumeTextBlock">I am a fairly recent graduate of The University of Texas at San Antonio where I received my BBA in Marketing with a concentration in Event Management...</div>
+									<button type="button" class="btn-nav">Read My Resume</button>
+						</div>
+						<div class="column one-third portfolioSection">
+							<h1 id="portfolio"><p>Portfolio</p></h1>
+								<div id="aboutPortfolioBlock">I have been a website developer for 9 days and have 4 projects under my belt....</div>
+									<button type="button" class="btn-nav">
+									Check Out My Portfolio
+									</button>
+						</div>
+
+
+				</div>
+			
+			</div>
+			
+			<!-- Mobile Nav Section -->
+			<section>
+			<div class="row">
+				<div class="column one-half" id="mobileAboutSection">
+				<div class="column one-half" id="mobileAboutButton">
+			</div>
+			<div class="row">
+				<div class="column one-half" id="mobileResumeSection">
+				<div class="column one-half" id="mobileResumeButton">
+			</div>
+			<div class="row">
+				<div class="column one-half" id="mobilePortfolioSection">
+				<div class="column one-half" id="mobilePortfolioButton">
+			</div>
+			</section>
+			
+			
+
+			<!-- Social Links Section -->
+			<div class="row">
+				<div class="social-links">
+					<div class="col-md-12"> 
+						<center>
+						<h1>Let's Get Social</h1> <br> 
+		        		<div id="social-media-links">
+		            	<a href="www.facebook.com/justagirlinthisworldblog" class="fa fa-facebook"></a>
+		            	<a href="www.twitter.com/jagwblog" class="fa fa-twitter"></a>
+		            	<a href="www.instagram.com/justagirlinthisworldblog" class="fa fa-instagram"></a>
+		            	<a href="www.pinterest.com/chloe__blogs" class="fa fa-pinterest"></a>
+		            	<a href="#" class="fa fa-codepen"></a>
+		            	<a href="www.justagirlinthisworld.com" class="fa fa-rss-square"></a> <br> <br> 
+		            	</div>
+		        	</div>
+		        	</center> </div>
+				</div>
+			</div>
 <footer></footer>	
 		
 	
 	
-
+</container>
 </body>
 </html>

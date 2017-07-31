@@ -12,28 +12,13 @@ header {text-align: center;
 .h3 {text-align: center;}
 .navbar-header: {opacity: 0.7;}
 header {background-color: #000000;}
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* First image (Logo. Full height) */
-.bgimg1 {
-		min-height: 100%;}
+.parallax {background-image: 
+			height: 500px;
+			background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;}
 
-/* Second image (Portfolio) */
-.bgimg2 {
-    
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg3 {
-    
-    min-height: 400px;
-}
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {

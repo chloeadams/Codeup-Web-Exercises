@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX Excercise</title>
+	<link rel="stylesheet" href="/grid.css">
+</head>
+<body>
+<main class="container">
+	<h1>Weather Application</h1>
+		<h3>San Antonio, TX Forecast</h3>
+			
+		<div class="row" id="content">
+			<!-- <div id="box1" class="column one-third">Day 1</div>
+			<div id="box2" class="column one-third">Day 2</div>
+			<div id="box3" class="column one-third">Day 3</div> -->
+		</div>
+
+		<form>
+			<div id="Latitude">Latitude: <input type="text" name="Latitude">
+			</div>
+			<div id="Longitude">Longitude: <input type="text" name="Longitude">
+			</div>
+			<div id="submit"><input type="submit">
+			</div>
+		</form>
+</main>
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js">
+	</script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+
+	<script src="/jquery.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+		"use strict";
+		// make a function to get the weather object from the OpenWeatherMap API
+		// create a function to append specific parts of the OpenWeatherMap map object to the DOM and call it in the .done() of the OpenWeatherMap map GET request.
+
+			$.get("http://api.openweathermap.org/data/2.5/forecast", {
+			    APPID: "c3f48975067235d79454e2ac3c781af7",
+			    id:     4726206,
+    			units: "imperial",
+    			cnt: 3
+			}) .done(function(data) {
+				    addWeather(data);
+				    }).fail(function(jqXhr, status, error){
+				    alert("There was an error! Check the console for details");
+				    console.log()
+
+			});
+		});
+		function addWeather(weather){
+			console.log(weather);
+		    var firstBoxString = "";
+	        weather.list.forEach(function(day){
+			    firstBoxString += "<div class=\"column one-third\">";
+			    // firstBoxString += "<h3>"+ weather.city.name + "</h3>" + "<br>";
+			    // firstBoxString += "<div class='row'>";
+	            // firstBoxString += "<div class='column one-third'>";
+	            firstBoxString += day.weather[0].description + "<br>";
+	            firstBoxString += "<img src='http://openweathermap.org/img/.png" + weather.icon + ".png'>" + "<br>";
+	            firstBoxString += "high:" + " " + day.main.temp_min + "/" + " " + "low:" + " " + day.main.temp_max +  "<br>";
+	            firstBoxString += day.clouds.all +"%"+ "<br>";
+	            firstBoxString += day.main.humidity +"%"+ "<br>";
+	            firstBoxString += day.wind.speed + " " + "mph"+ "<br>";
+	            firstBoxString += day.main.pressure + "<br>";
+				
+	
+				firstBoxString += "</div>";
+	        });
+	//     firstBoxString += "</div>"; /* closes row div */
+	        $('#content').append(firstBoxString);
+		  };
+		// function addForecastToPage (data){
+		// 	return src("http://openweathermap.org/img/w/") + whateverTheWeatherIconValueIs
+		// }
+				
+	</script>
+</main>
+</body>
+</html>

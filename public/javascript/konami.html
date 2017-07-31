@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+    <container>
+    <h1>Konami Code</h1>
+    Enter the Konami Code: <input type="text" name="KonamiCode" ><br>
+    <button type="button">Enter</button>
+    </container>
+
+    <script src="/jquery.js"></script>
+    <script>
+        "use strict";
+
+        $(document).keyup(function(event){
+            console.log(event.keyCode);
+        });
+
+        $(document).ready(function(){
+    		$("input").focus(function(){
+		        $(this).css("background-color", "#8470ff");
+		        $(this).css("color", "#00ffff");
+		    });
+		 $("button").on("click",function(){
+        	alert("You have added 30 lives!");
+        	$("button").css("background-color", "#8470ff");
+		    $("button").css("color", "#00ffff");
+		     $("container").css("background-color", "#00ffff");
+		     $("container").css("color", "#a020f0");
+   			 });
+		});
+    </script>
+</body>
+</html>

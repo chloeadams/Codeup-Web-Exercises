@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register With Us</title>
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Patrick+Hand+SC|Roboto+Mono" rel="stylesheet">
+	<style>
+	body {font-family: 'Bubbler One', sans-serif;
+	font-family: 'Patrick Hand SC', cursive;
+	font-family: 'Roboto Mono', monospace;}
+    body {background-image: url("/img/img1.jpeg");
+    background-repeat: repeat-x;}
+    body {color: #FFFFFF;}
+	h1   {color: #33ECFF;}
+	h2   {color: #3AFF00 ;}
+	
+
+
+</style>
+</head>
+<body>
+
+	<header><p><h1>Dominoes</h1></p></header>
+	<hr>
+	<p><h2>Build Your Pizza</h2></p>
+		<label for="toppings">Toppings </label>
+			<select id="toppings" name="toppings">
+		<select multiple>
+	  	<option value="Pepperoni">Pepperoni</option>
+	  	<option value="canadian bacon">Canadian Bacon</option>
+	  	<option value="Pineapple">Pineapple</option>
+	  	<option value="Veggies">Veggies</option>
+		</select> <br>
+		<label for="crust">Crust </label>
+				<select id="crust" name="crust">
+		<select multiple>
+	  	<option value="thin crust">Thin Crust</option>
+	  	<option value="Thick Crust">Thick Crust</option>
+	  	<option value="stuffed crust">Stuffed Crust</option>
+	  	<option value="gluten Free">Gluten Free</option>
+		</select> <br>
+		<label for="sauce">Sauce </label>
+				<select id="sauce" name="sauce">
+		<select multiple>
+	  	<option value="red sauce">Red Sauce</option>
+	  	<option value="white sauce">White Sauce</option>
+	  	</select> <br>
+	  	<label for="size">Size </label>
+				<select id="Size" name="size">
+		<select multiple>
+	  	<option value="large">Large</option>
+	  	<option value="medium">Medium</option>
+	  	<option value="small">Small</option>
+	  	<option value="personal">Personal</option>
+	  	</select> <br>
+	<main>
+	<form method="POST" action="https://requestb.in/17q5h341">
+	<div>
+		<label for="email">Email</label>
+    	<input id="email" name="email" type="text" required="email">
+    	<br>
+    </div>
+    <div>
+	<label for="password">Password</label>
+    <input id="password" name="password" type="password" required="password">
+    <br>
+    </div>
+    <div>
+    <p><h2>Tell us about yourself with a short bio.</h2></p>
+    <textarea id="bio" name="bio" rows="5" cols="40">Place bio here...</textarea>
+	<br>
+	</div>
+	<div>
+	   <p><h2>How did you hear about us?</h2></p>
+		<label>
+    	<input type="radio" name="q1" value="Billboard">
+    		Billboard
+		</label>
+		<label>
+   		 <input type="radio" name="q1" value="Radio Advertisement">
+    		Radio Advertisement
+		</label>
+		<label>
+   		 <input type="radio" name="q1" value="Internet Advertisement">
+    		Internet Advertisement
+		</label>
+		<label>
+    		<input type="radio" name="q1" value="Other">
+    		Other
+		</label>
+		</div>
+		<div>
+		<p><h2>Browser Type</h2></p>
+		<label for="browser">What type of browser are you using? </label>
+			<select id="browser" name="browser">
+   			 <option value="1"> Google Chrome</option>
+    		<option value="2"> Firefox</option>
+    		<option Value="3"> Windows</option>
+    		<option Value="3"> Safari</option>
+    	</div>
+</select>
+		<div>
+		<button type="submit">REGISTER</button>
+		
+		</div>
+</form>
+</main>
+	
+</body>
+</html>
