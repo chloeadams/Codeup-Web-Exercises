@@ -34,11 +34,11 @@ $myFaveThings= array (
     <body>
       <h1>These are a few of my favorite things...</h1>
     <table>
-      <?php foreach ($myFaveThings as $value) { ?>
-        <tr>
-        <td> <?php echo "$value \n"?></td>
-        </tr>
-     <?php  } ?>
+      <tr>
+        <?php foreach ($myFaveThings as $value) { ?>
+          <td> <?php echo "$value \n"?></td>
+        <?php  endforeach ?>
+    </tr>
    </table>
     </body>
 </html>

@@ -5,6 +5,15 @@
 //
 // Create a new file in your public directory named server-name-generator.php.
 // Create two arrays.
+
+// Require or include statements are allowed here. All other code goes in the pageController function.
+
+/**
+ * The pageController function handles all processing for this page.
+ * @return array An associative array of data to be used in rendering the html view.
+ */
+function pageController()
+{
 // One containing at least 10 adjectives.
 $adjectives = array(
 'active',
@@ -57,7 +66,7 @@ funtion randomServerName ($arr1, $arr2) {
     <body>
       <h1>Adjectives and nouns....</h1>
       <h1>Random element: <?php echo randomArrayElement</h1> ?>
-      <h1> Random elements: <?php echo randomServerName($Adjectives, $nouns) ?>
+      <h1> Random elements: <?php echo randomServerName($Adjectives, $nouns) ?> </h1> 
    </table>
     </body>
 </html>
